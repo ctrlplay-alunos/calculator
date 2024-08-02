@@ -2,13 +2,13 @@ import { useState } from "react";
 import { evaluate } from "mathjs";
 
 export function Calculator() {
-  const [input, setInput] = useState("");
-  const [result, setResult] = useState("");
-
   const buttonClassName = "justify-center items-center";
 
   const hoverClassName =
     "hover:opacity-75 transition ease-in-out duration-300 hover:text-[#CCD5AE]";
+
+  const [input, setInput] = useState("");
+  const [result, setResult] = useState("");
 
   const handleClick = (value) => {
     setInput(input + value);
