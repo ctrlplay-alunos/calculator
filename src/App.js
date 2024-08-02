@@ -1,9 +1,9 @@
-import Calculadora from "./components/Calculadora";
+import { Calculator } from "./components/calculator";
 
 function App() {
   return (
     <div className="flex p-10 justify-center">
-      <Calculadora/>
+      <Calculator />
     </div>
   );
 }

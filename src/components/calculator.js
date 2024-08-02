@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { evaluate } from "mathjs";
 
-export default function Calculadora() {
+export function Calculator() {
   const [input, setInput] = useState("");
   const [result, setResult] = useState("");
 
