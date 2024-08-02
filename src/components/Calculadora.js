@@ -5,6 +5,11 @@ export default function Calculadora() {
   const [input, setInput] = useState("");
   const [result, setResult] = useState("");
 
+  const buttonClassName = "justify-center items-center";
+
+  const hoverClassName =
+    "hover:opacity-75 transition ease-in-out duration-300 hover:text-[#CCD5AE]";
+
   const handleClick = (value) => {
     setInput(input + value);
   };
@@ -24,11 +29,6 @@ export default function Calculadora() {
   };
 
   const handleDelete = () => setInput((prev) => prev.slice(0, -1));
-
-  const buttonClassName = "justify-center items-center";
-
-  const hoverClassName =
-    "hover:opacity-75 transition ease-in-out duration-300 hover:text-[#CCD5AE]";
 
   return (
     <div className="grid shadow-md w-[360px] text-2xl font-bold">
