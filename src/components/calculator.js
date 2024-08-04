@@ -22,12 +22,12 @@ export function Calculator() {
       setResult("Error");
     }
   };
-  
+
   const handleClear = () => {
     setInput("");
     setResult("");
   };
-  
+
   const handleDelete = () => setInput((prev) => prev.slice(0, -1));
 
   return (
@@ -60,7 +60,12 @@ export function Calculator() {
           -
         </button>
 
-        <div className={`${buttonClassName} bg-[#E9EDC9]`} />
+        <button
+          className={`${buttonClassName} ${hoverClassName} bg-[#E9EDC9] text-[#D4A373]`}
+          onClick={() => handleClick("%")}
+        >
+          %
+        </button>
 
         <button
           className={`${buttonClassName} ${hoverClassName}`}
