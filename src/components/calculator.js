@@ -107,7 +107,12 @@ export function Calculator() {
           6
         </button>
 
-        <div className={`${buttonClassName} bg-[#E9EDC9]`} />
+        <button
+          className={`${buttonClassName} ${hoverClassName} bg-[#E9EDC9] text-[#D4A373]`}
+          onClick={() => handleClick("*")}
+        >
+          *
+        </button>
 
         <button
           className={`${buttonClassName} ${hoverClassName}`}
