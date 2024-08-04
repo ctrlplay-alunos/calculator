@@ -14,11 +14,6 @@ export function Calculator() {
     setInput(input + value);
   };
 
-  const handleClear = () => {
-    setInput("");
-    setResult("");
-  };
-
   const handleCalculate = () => {
     try {
       if (!input) return;
@@ -27,7 +22,12 @@ export function Calculator() {
       setResult("Error");
     }
   };
-
+  
+  const handleClear = () => {
+    setInput("");
+    setResult("");
+  };
+  
   const handleDelete = () => setInput((prev) => prev.slice(0, -1));
 
   return (
