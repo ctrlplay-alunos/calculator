@@ -2,11 +2,6 @@ import { useState } from "react";
 import { evaluate } from "mathjs";
 
 export function Calculator() {
-  const buttonClassName = "justify-center items-center";
-
-  const hoverClassName =
-    "hover:opacity-75 transition ease-in-out duration-300 hover:text-[#CCD5AE]";
-
   const [input, setInput] = useState("");
   const [result, setResult] = useState("");
 
@@ -41,110 +36,110 @@ export function Calculator() {
       </div>
       <div className="bg-white grow h-[480px] grid grid-cols-4">
         <button
-          className={`${buttonClassName} ${hoverClassName} bg-[#FEFAE0]`}
+          className="justify-center items-center hover:opacity-75 transition ease-in-out duration-300 hover:text-[#CCD5AE] bg-[#FEFAE0]"
           onClick={handleClear}
         >
           C
         </button>
         <button
-          className={`${buttonClassName} ${hoverClassName} bg-[#E9EDC9] text-[#D4A373]`}
+          className="justify-center items-center hover:opacity-75 transition ease-in-out duration-300 hover:text-[#CCD5AE] bg-[#E9EDC9] text-[#D4A373]"
           onClick={() => handleClick("+")}
         >
           +
         </button>
 
         <button
-          className={`${buttonClassName} ${hoverClassName} bg-[#E9EDC9] text-[#D4A373]`}
+          className="justify-center items-center hover:opacity-75 transition ease-in-out duration-300 hover:text-[#CCD5AE] bg-[#E9EDC9] text-[#D4A373]"
           onClick={() => handleClick("-")}
         >
           -
         </button>
 
-        <div className={`${buttonClassName} bg-[#E9EDC9]`} />
+        <div className="justify-center items-center bg-[#E9EDC9]" />
 
         <button
-          className={`${buttonClassName} ${hoverClassName}`}
+          className="justify-center items-center hover:opacity-75 transition ease-in-out duration-300 hover:text-[#CCD5AE]"
           onClick={() => handleClick("7")}
         >
           7
         </button>
         <button
-          className={`${buttonClassName} ${hoverClassName}`}
+          className="justify-center items-center hover:opacity-75 transition ease-in-out duration-300 hover:text-[#CCD5AE]"
           onClick={() => handleClick("8")}
         >
           8
         </button>
         <button
-          className={`${buttonClassName} ${hoverClassName}`}
+          className="justify-center items-center hover:opacity-75 transition ease-in-out duration-300 hover:text-[#CCD5AE]"
           onClick={() => handleClick("9")}
         >
           9
         </button>
 
-        <div className={`${buttonClassName} bg-[#E9EDC9]`} />
+        <div className="justify-center items-center bg-[#E9EDC9]" />
 
         <button
-          className={`${buttonClassName} ${hoverClassName}`}
+          className="justify-center items-center hover:opacity-75 transition ease-in-out duration-300 hover:text-[#CCD5AE]"
           onClick={() => handleClick("4")}
         >
           4
         </button>
         <button
-          className={`${buttonClassName} ${hoverClassName}`}
+          className="justify-center items-center hover:opacity-75 transition ease-in-out duration-300 hover:text-[#CCD5AE]"
           onClick={() => handleClick("5")}
         >
           5
         </button>
         <button
-          className={`${buttonClassName} ${hoverClassName}`}
+          className="justify-center items-center hover:opacity-75 transition ease-in-out duration-300 hover:text-[#CCD5AE]"
           onClick={() => handleClick("6")}
         >
           6
         </button>
 
-        <div className={`${buttonClassName} bg-[#E9EDC9]`} />
+        <div className="justify-center items-center bg-[#E9EDC9]" />
 
         <button
-          className={`${buttonClassName} ${hoverClassName}`}
+          className="justify-center items-center hover:opacity-75 transition ease-in-out duration-300 hover:text-[#CCD5AE]"
           onClick={() => handleClick("1")}
         >
           1
         </button>
         <button
-          className={`${buttonClassName} ${hoverClassName}`}
+          className="justify-center items-center hover:opacity-75 transition ease-in-out duration-300 hover:text-[#CCD5AE]"
           onClick={() => handleClick("2")}
         >
           2
         </button>
         <button
-          className={`${buttonClassName} ${hoverClassName}`}
+          className="justify-center items-center hover:opacity-75 transition ease-in-out duration-300 hover:text-[#CCD5AE]"
           onClick={() => handleClick("3")}
         >
           3
         </button>
 
-        <div className={`${buttonClassName} bg-[#E9EDC9]`} />
+        <div className="justify-center items-center bg-[#E9EDC9]" />
 
         <button
-          className={`${buttonClassName} ${hoverClassName}`}
+          className="justify-center items-center hover:opacity-75 transition ease-in-out duration-300 hover:text-[#CCD5AE]"
           onClick={() => handleClick(".")}
         >
           .
         </button>
         <button
-          className={`${buttonClassName} ${hoverClassName}`}
+          className="justify-center items-center hover:opacity-75 transition ease-in-out duration-300 hover:text-[#CCD5AE]"
           onClick={() => handleClick("0")}
         >
           0
         </button>
         <button
-          className={`${buttonClassName} ${hoverClassName} text-sm`}
+          className="justify-center items-center hover:opacity-75 transition ease-in-out duration-300 hover:text-[#CCD5AE] text-sm"
           onClick={handleDelete}
         >
           DEL
         </button>
         <button
-          className={`${buttonClassName} ${hoverClassName} bg-[#FEFAE0]`}
+          className="justify-center items-center hover:opacity-75 transition ease-in-out duration-300 hover:text-[#CCD5AE] bg-[#FEFAE0]"
           onClick={handleCalculate}
         >
           =
